@@ -17,17 +17,17 @@ function calcular (){
 var imc = (input_peso.value / (input_altura.value * input_altura.value)*10000).toFixed(1);
 total.innerText = imc;
 
-if (imc < 16.9) {
+if (imc <= 16.9) {
     status = "Muito abaixo do peso"
-}else if(imc < 18.4) {
+}else if(imc <= 18.4) {
     status = "Abaixo do peso"
-}else if(imc < 24.9) {
+}else if(imc <= 24.9) {
     status = "Normal";
-}else if(imc < 29.9) {
+}else if(imc <= 29.9) {
     status = "Sobrepeso"
-}else if(imc < 34.9) {
+}else if(imc <= 34.9) {
     status = "Obesidade Grau 1"
-}else if(imc < 39.9) {
+}else if(imc <= 39.9) {
     status = "Obesidade Grau 2"
 }else if(imc > 40) {
     status = "Obesidade Grau 3"
