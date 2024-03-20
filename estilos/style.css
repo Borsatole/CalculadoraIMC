@@ -15,7 +15,11 @@ body {
     justify-content: center;
     height: 100vh;
 }
-
+mark {
+    background-color: #14B339;
+    color: white;
+    padding: 3px;
+}
 section {
     background-color: #14B339;
     color:rgb(255, 255, 255);
@@ -120,8 +124,7 @@ section input{
 
 }
 
-
-.saida button:hover { 
+.saida #calcular:hover { 
    background-color:#039023;
 }
 

@@ -3,6 +3,8 @@ var btn_refazer = document.getElementById("refazer");
 var input_altura = document.getElementById("altura");
 var input_peso = document.getElementById("peso");
 
+var div_pesoideal = document.querySelector(".pesoideal");
+
 var classecm = document.querySelectorAll(".cm");
 
 var animacao = document.querySelector(".grafico");
@@ -13,7 +15,35 @@ var niveistabela = document.querySelector(".niveis");
 var total = document.querySelector(".total");
 var status = "Normal";
 
+
+
+
+
 function calcular (){
+
+var pesoideal = [];
+
+
+pesoideal.push(input_altura.value[1]);
+pesoideal.push(input_altura.value[2]);
+
+var pesoidealconvertido = Number(`${pesoideal[0]}${pesoideal[1]}`)
+
+var goup = "";
+goupeso = 0;
+
+if(pesoidealconvertido > input_peso.value) {
+    goup = "ganhar"
+    goupeso = pesoidealconvertido - input_peso.value
+} else {
+    goup = "perder"
+    goupeso = input_peso.value - pesoidealconvertido
+}
+
+
+
+div_pesoideal.innerHTML = `<br><p>O seu peso ideal é ${pesoidealconvertido} kgs.<br> sendo assim você precisa ${goup} ${goupeso} kgs.</p>`
+
 var imc = (input_peso.value / (input_altura.value * input_altura.value)*10000).toFixed(1);
 total.innerText = imc;
 
@@ -60,9 +90,20 @@ hstatus.innerHTML = `${status}<br>
         classecm[1].innerHTML = `<input type="number" id="peso" disabled>
         <label for="">kg</label>`;
 
-        console.log(input_peso.value/(input_altura.value * input_altura.value));
-
 };
+
+input_altura.addEventListener("focusout",()=>{
+
+    
+    input_altura.value = input_altura.value.replace(".","").replace(",","");
+})
+
+
+        // animacao.style.display = "none";
+        // resultado.style.display = "flex";
+        // niveistabela.style.display = "flex";
+        // btn_calcular.style.display = "none";
+        // btn_refazer.style.display = "block";
 
 
 btn_calcular.addEventListener("click",()=>{
