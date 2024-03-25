@@ -114,7 +114,19 @@ btn_calcular.addEventListener("click",()=>{
 
         input_altura.value = 0;
         input_peso.value = 0;
-        alert("Verifique os dados e tente novamente");
+        Toastify({
+            text: "Verifique os dados e tente novamente",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#14B339",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
 
     } else {
         calcular();
