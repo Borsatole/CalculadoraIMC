@@ -10,14 +10,13 @@
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.1/tween.min.js" defer></script>
     <script src="script/app.js" defer></script>
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Calculadora de IMC Online</title>
 </head>
 <body>
-
-    
     
     <section>
         <div>
@@ -25,12 +24,12 @@
             <h1>Calculadora de IMC</h1>
             
             <div class="cm">
-                <input type="number" id="altura" value="">
+                <input type="number" id="altura" value="178">
                 <label for="">cm</label>
             </div>
 
             <div class="cm">
-                <input type="number" id="peso">
+                <input type="number" id="peso" value="135">
                 <label for="">kg</label>
             </div>
             
@@ -106,6 +105,7 @@
             <button id="refazer">Recalcular</button>
         </div>
     </section>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.1/tween.min.js"></script>
+
 </body>
 </html>

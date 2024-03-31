@@ -144,3 +144,8 @@ section input{
 .saida #refazer:hover { 
     background-color:#039023;
  }
+
+
+ .toastify {
+    box-shadow: none;
+ }

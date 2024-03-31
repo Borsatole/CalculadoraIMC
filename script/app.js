@@ -45,6 +45,9 @@ if(pesoidealconvertido > input_peso.value) {
 div_pesoideal.innerHTML = `<br><p>O seu peso ideal é ${pesoidealconvertido} kgs.<br> sendo assim você precisa ${goup} ${goupeso} kgs.</p>`
 
 var imc = (input_peso.value / (input_altura.value * input_altura.value)*10000).toFixed(1);
+
+
+
 total.innerText = imc;
 
 if (imc <= 16.9) {
@@ -110,7 +113,7 @@ btn_calcular.addEventListener("click",()=>{
     var input_altura = document.getElementById("altura");
     var input_peso = document.getElementById("peso");
 
-    if(input_altura.value == ""|| input_altura.value <= 0) {
+    if(input_altura.value == ""|| input_altura.value <= 0 || input_peso.value == "" || input_peso.value <= 0) {
 
         input_altura.value = 0;
         input_peso.value = 0;
@@ -135,15 +138,4 @@ btn_calcular.addEventListener("click",()=>{
 
 btn_refazer.addEventListener("click",()=>{
     window.location.reload(true);
-})
-
-
-
-
-        
-
-        
-        
-
-
-        
+});
