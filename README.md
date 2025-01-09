@@ -1,26 +1,23 @@
-![image](https://github.com/Borsatole/CalculadoraIMC/assets/98705165/ecc3f13c-a28a-4390-a4db-eb590e04b3a3)
 
+# ⚖️ Calculadora de IMC
 
-CALCULADORA DE IMC (Veja Online - https://borsatole.github.io/CalculadoraIMC/)
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/98705165/314755512-ecc3f13c-a28a-4390-a4db-eb590e04b3a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250109T184424Z&X-Amz-Expires=300&X-Amz-Signature=cf64ff7ebbb87341e918dec6642e91f628a2177a9e4ec0a863c87e940f2a3699&X-Amz-SignedHeaders=host">
 
-Este projeto é uma calculadora simples de Índice de Massa Corporal (IMC) desenvolvida em HTML, CSS E JAVASCRIPT. O objetivo é fornecer uma ferramenta fácil de usar para calcular o IMC e classificar o resultado de acordo com a OMS.
+### 💬 Descrição
 
-➡️ FUNCIONALIDADES:
+<p> Este projeto é uma calculadora simples e intuitiva para o cálculo do Índice de Massa Corporal (IMC). Desenvolvida em HTML, CSS e JavaScript, a aplicação fornece uma forma prática de calcular o IMC e exibe a classificação do resultado com base nos parâmetros da Organização Mundial da Saúde (OMS). Ideal para quem deseja acompanhar sua saúde ou aprender sobre desenvolvimento de aplicações interativas. </p>
 
-Calcular o IMC com base na altura e peso do usuário.
-Classificar o resultado do IMC de acordo com a OMS:
-Abaixo do peso
-Peso normal
-Sobrepeso
-Obesidade
+## ⚙️ Funcionalidades
 
-➡️ TECNOLOGIAS UTILIZADAS:
+<p>✅ Cálculo de IMC: Com base nos valores de altura e peso inseridos pelo usuário. <br/><br/>✅ Classificação de IMC: Resultado categorizado de acordo com os padrões da OMS: <br/>• Abaixo do peso <br/>• Peso normal <br/>• Sobrepeso <br/>• Obesidade <br/><br/>✅ Design Interativo: Conta com uma animação inicial desenvolvida com recursos do site <a href="https://storyset.com/" target="_blank">storyset.com</a>. 
+### 🤖 Linguagens e Tecnologias Utilizadas
 
-HTML, CSS , JAVASCRIPT
-Tambem utilizei o site: storyset.com para fazer a animação da tela inicial.
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,html,css,javascript" />
+  </a>
+</p>
 
-➡️ COMO USAR:
+### 🔗 Veja o Projeto
+https://borsatole.github.io/CalculadoraIMC/
 
-Insira sua altura e peso nos campos respectivos.
-Clique no botão "Calcular".
-O resultado do IMC será exibido, junto com a classificação da OMS.
